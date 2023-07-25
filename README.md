@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Simple Calculator App
+This is a simple calculator app built using React that allows users to perform basic arithmetic operations. The app uses the useReducer hook to manage the state and perform calculations based on dispatched actions.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Functionality
 
-## Available Scripts
+    **Users can input numeric digits by clicking on the digit buttons (0-9).
+    **Users can perform arithmetic operations (+, -, *, ÷) by clicking on the operation buttons.
+    **Users can clear the current calculation by clicking the "AC" button.
+    **Users can delete the last entered digit by clicking the "DEL" button.
+    **Users can evaluate the expression and get the result by clicking the "=" button.
 
-In the project directory, you can run:
+## How It Works
 
-### `npm start`
+The app uses a reducer function to handle state updates based on dispatched actions. The available actions are defined in the ACTIONS object and include:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    `ADD_DIGIT:` To add a digit to the current operand.
+    `CHOOSE_OPERATION:` To choose an arithmetic operation.
+    `CLEAR:` To clear the state and reset the calculator.
+    `DELETE_DIGIT:` To delete the last entered digit.
+    `EVALUATE:` To evaluate the expression and get the result.
+The `evaluate` function is a helper function that performs the actual arithmetic calculations based on the selected operation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The `formatOperator` function is another helper function that formats the operands to display them as integers without trailing decimal places.
 
-### `npm test`
+## Components
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app consists of the following components:
+    `App:` The main component that holds the calculator's state and dispatches actions.
+    `DigitButton:` Represents a button for numeric digits (0-9).
+    `OperationButton:` Represents a button for arithmetic operations (+, -, *, ÷).
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    1. Clone this repository to your local machine.
+    2. Navigate to the project directory and run `npm install` to install the required dependencies.
+    3. Run `npm start` to start the development server and open the app in your browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Feel free to explore the code, modify it, and use it as a starting point for your own projects!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Credits
+I have Code this from Tutorial by Web Dev Simplified:
+ 
+ <iframe width="560" height="315" src="https://youtu.be/DgRrrOt0Vr8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 
