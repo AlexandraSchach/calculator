@@ -40,6 +40,4 @@ Feel free to explore the code, modify it, and use it as a starting point for you
 ## Credits
 I have Code this from Tutorial by Web Dev Simplified:
  
- <iframe width="560" height="315" src="https://youtu.be/DgRrrOt0Vr8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
- 
+ [The Perfect Beginner React Projekt](https://youtu.be/DgRrrOt0Vr8) 
